@@ -13,3 +13,7 @@ This is the main container which receives the realtime telemetry.
 
 This is an optional container which transforms the stations state vector from Earth Centric to
 Longitude/Latitude/Altitude format so that the stations current position on a map.
+
+# grafana
+
+This folder contains the dashboard definitions I use to display. These are here for reference/backup.
