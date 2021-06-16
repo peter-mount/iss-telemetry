@@ -1,0 +1,41 @@
+{
+  "name": "area51iss",
+  "version": "0.0.1",
+  "private": true,
+  "publishConfig": {
+    "registry": "https://nexus.area51.dev/repository/npm-private/"
+  },
+  "scripts": {
+    "babel": "babel src --ignore __tests__ --out-dir ./build",
+    "build": "npm run babel",
+    "buildRun": "npm run build && npm run run",
+    "run": "node ./build/index.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "lightstreamer-client": "^7.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-proposal-do-expressions": "^7.12.1",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/plugin-proposal-function-bind": "^7.12.1",
+    "@babel/plugin-proposal-function-sent": "^7.12.1",
+    "@babel/plugin-proposal-json-strings": "^7.12.1",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.12.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-numeric-separator": "^7.12.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.1",
+    "@babel/plugin-proposal-pipeline-operator": "^7.12.1",
+    "@babel/plugin-proposal-throw-expressions": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/plugin-transform-modules-umd": "^7.12.1",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.1"
+  }
+}

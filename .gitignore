@@ -1,0 +1,8 @@
+dist/
+temp/
+node_modules/
+package-lock.json
+build/
+npm-debug.log
+.idea
+/feed/tmp/
